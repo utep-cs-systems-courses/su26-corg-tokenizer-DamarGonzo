@@ -25,6 +25,13 @@ int main() {
 
         if (len == 0) continue;
 
+        if (input[0] == 'h' && input[1] == 'i' && input[2] == 's' &&
+            input[3] == 't' && input[4] == 'o' && input[5] == 'r' &&
+            input[6] == 'y' && input[7] == '\0') {
+            print_history(history);
+            continue;
+        }
+
         // Case D: Recall History Logic
         if (input[0] == '!') {
             int id = 0;
